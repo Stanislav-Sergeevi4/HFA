@@ -1,14 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/index.css">
-    <title>Animals</title>
+    <title>Найди друга</title>
+    <link rel="shortcut icon" href="img/dog_trail.png" type="image/x-icon" />
+    <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
-    
+    <!-- _________________________header_______________________________ -->
+    <header>
+        <div class="btn-menu">
+        <div class="menu">Меню</div>
+        </div>
+        <h1>НАШИ ЛЮБИМЫЕ ПИТОМЦЫ</h1>
+        <div id="select_city">
+            <img class="img-gps" src="img/gps.png" alt="">
+            <select class="nav_select">
+                <option class="nav_cg" id="krasnoirsck">Красноярск</option>
+                <!-- <option id="moskva">Москва</option>
+            <option id="piter">Санкт-Петербург</option> -->
+                <option class="nav_cg" id="nocity">Пока нет других городов</option>
+            </select>
+        </div>
+        <div class="registration">
+            <div class="registration_box">
+                <div class="btn_enter">
+                    Вход
+                </div>
+                <div class="btn_registration">
+                    Регистрация
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ______________________________nav_________________________________ -->
+    <nav>
+        <div class="btn_nav_halp1">Нашёл животное</div>
+        <div class="btn_nav_halp2">Потерял животное</div>
+        <div class="btn_nav_halp3">+ Добавить</div>
+    </nav>
+    <!-- ___________________________page_ancet__________________________________ -->
+    <!-- <section id="pags_ancet">
+        <div class="ancet_1">
+            <div class="img"><img class="img_ancet" src="img/cat.jpg" alt=""></div>
+            <div class="about_ancet">
+                <h3>Друг Lorem ipsum dolor sit amet consectetur necessitatibus!</h3>
+            </div>
+        </div>  
+    </section> -->
+    <!-- _____________________________Регистрация____________________ -->
+    <!-- <section class="div_registration_enter_js">
+        <div class="blanck_registration">
+            <h2>Вход</h2>
+            <input type="text">
+            <input type="password">
+        </div>
+    </section> -->
+    <script type="text/javascript" src="/live_animale/menu.js"></script>
+    <script type="text/javascript" src="/live_animale/registration.js"></script>
+    <script type="text/javascript" src="/live_animale/add_profile.js"></script>
+    <!-- <script type="text/javascript" src="/live_animale/index.js"></script> -->
 </body>
 </html>

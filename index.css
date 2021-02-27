@@ -1,3 +1,463 @@
-body{
-    background-color: rgb(20, 97, 199);
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #000000;
+    font-family: "Arial";
+    user-select: none;
+    transition: .3s;
 }
+a:hover ,
+select:hover,
+option:hover{
+text-decoration: none;
+}
+a,
+select,
+option{
+    text-decoration: none; 
+}
+button:focus,
+input:focus,
+textarea:focus,
+select,
+option {
+outline: 0;
+}
+body{
+    background-color: rgb(111, 106, 106);
+}
+/* ____________________________header____________________________ */
+header{
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 5px;
+}
+.btn-menu{
+    grid-column: 2/3;
+    grid-row: 1fr;
+}
+.menu{
+    font-size: 20px;
+    background-color: #cc99cc;
+    width: 100px;
+    padding: 10px;
+    border-radius: 0 0 10px 10px ;
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}
+.block_menu{
+    position: absolute;
+    top: -302px;
+    left: 13vw;
+    width: 1000px;
+    height: 300px;
+    background-color: #cc99cc;
+    border-radius: 0 0 10px 10px;
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    overflow: hidden;
+}
+.btn_block_menu1{
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    background-color: #cc99cc;
+    border: 2px solid #000;
+    transform: rotate(-50deg);
+    padding: 230px 200px 50px 200px;
+    margin-top: -100px;
+    margin-left: -270px;
+}
+.btn_block_menu2{
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    background-color: #cc99cc;
+    border: 2px solid #000;
+    transform: rotate(-50deg);
+    padding: 50px 200px 50px 200px;
+    top: 70px;
+    left: -60px;
+}
+.btn_block_menu3{
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    background-color: #cc99cc;
+    border: 2px solid #000;
+    transform: rotate(-50deg);
+    padding: 50px 200px 50px 200px;
+    top: 80px;
+    left: 180px;
+}
+.btn_block_menu4{
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    background-color: #cc99cc;
+    border: 2px solid #000;
+    transform: rotate(-50deg);
+    padding: 50px 200px 50px 200px;
+    top: 80px;
+    left: 350px;
+}
+.btn_block_menu5{
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    background-color: #cc99cc;
+    border: 2px solid #000;
+    transform: rotate(-50deg);
+    padding: 50px 200px 200px 200px;
+    top: 50px;
+    left: 640px;
+    white-space: nowrap;
+}
+.btn_block_menu1:hover,
+.btn_block_menu2:hover,
+.btn_block_menu3:hover,
+.btn_block_menu4:hover,
+.btn_block_menu5:hover{
+    background-color: rgb(145, 143, 143);
+    color: #fff;
+    cursor: pointer;
+}
+.menu:hover{
+    background-color: rgb(145, 143, 143);
+    color: #fff;
+    cursor: pointer;
+
+}
+h1{
+    grid-column: 3 / span 2;
+    grid-row: 1fr;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 0;
+    color: #fff;
+}
+#select_city{
+    grid-column: 5/6;
+    grid-row: 1fr;
+    padding-top: 20px;
+    
+}
+.nav_select{
+    color: #000000;
+    background-color: #cc99cc;
+    border: none;
+    box-shadow: none;
+    font-size: 20px;
+    border-radius: 20px;
+    height: 35px;
+    padding: 0 0 0 25px;
+    cursor: pointer;
+    
+}
+.img-gps{
+    position: absolute;
+    padding: 7px;
+    width: 15px;
+    height: cover;
+}
+/* _____________registration________________________________________ */
+.registration{
+    grid-column: 6/8;
+    grid-row: 1fr;
+    
+}
+.registration_box{
+    display: inline-block;
+    /* height: 20px; */
+    text-align: center;
+    color: #000;
+    border-radius:0 0 10px 10px;
+    /* background-color: #cc99cc; */
+    padding: 7px;
+    font-size: 20px;
+    /* line-height: 20px; */
+}
+.btn_enter{
+    display: inline;
+    text-align: center;
+    background-color: #cc99cc;
+    border-radius: 0 0 0 10px;
+    padding: 10px;
+    font-size: 20px;
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}
+.btn_enter:hover,
+.btn_registration:hover{
+    background-color: rgb(145, 143, 143);
+    color: #fff;
+    cursor: pointer;
+
+}
+.btn_registration{
+    display: inline;
+    text-align: center;
+    background-color: #cc99cc;
+    border-radius: 0 0 10px 0;
+    padding: 10px;
+    font-size: 20px;
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
+/* _______________________nav________________________________ */
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 6px;
+}
+.btn_nav_halp1{
+    grid-column: 1fr;
+    grid-row: 1fr;
+    padding: 20px 30px;
+    font-size: 24px;
+    border-right: 1px solid rgb(145, 143, 143);
+}
+.btn_nav_halp1:hover{
+    background-color: rgb(145, 143, 143);
+    color: #fff;
+    cursor: pointer;
+}
+.btn_nav_halp2{
+    grid-column: 1fr;
+    grid-row: 1fr;
+    padding: 20px 30px;
+    font-size: 24px;
+    border-right: 1px solid rgb(145, 143, 143);
+}
+.btn_nav_halp2:hover{
+    background-color: rgb(145, 143, 143);
+    color: #fff;
+    cursor: pointer;
+
+}
+.btn_nav_halp3{
+    grid-column: 1fr;
+    grid-row: 1fr;
+    padding: 20px 30px;
+    font-size: 24px;
+}
+.btn_nav_halp3:hover{
+    background-color: rgb(145, 143, 143);
+    color: #fff;
+    cursor: pointer;
+
+}
+.menu:active,
+.btn_enter:active,
+.btn_registration:active,
+.btn_nav_halp1:active,
+.btn_nav_halp2:active,
+.btn_nav_halp3:active{
+    box-shadow: inset 0 0 6px black;
+}
+/* ____________________page_ancet_____________________________________ */
+/* #pags_ancet{
+    display: grid;
+    grid-template-columns:  repeat(7, 1fr);
+    grid-template-rows: repeat(10, 4vw);
+    grid-gap: 10px;
+    padding: 10px 0px;
+    
+} */
+/* __________________Анкета_________________________________- */
+/* .ancet_1{
+
+    border-radius: 10px;
+    grid-column: 2/ span 5;
+    grid-row: 1/ span 4;
+    background-color: #cc99cc;
+    display: grid;
+    grid-template-columns:  repeat(10, 1fr);
+    grid-template-rows: repeat(4, 4vw);
+    grid-gap: 10px;
+    box-shadow: 0 0 10px ;
+}
+.img{
+    grid-column: 1/3;
+    grid-row: 1/5;
+    overflow: hidden;
+    margin: 10px;
+}
+.img_ancet{
+    max-width: 100%;
+    max-height: 100%;
+}
+.about_ancet{
+    grid-column: 3/11;
+    grid-row: 1/5;
+    margin: 10px 10px 10px 0px;
+    overflow: auto;
+    
+} */
+
+/* ________registration_ancet__________________________________ */
+.div_registration_enter_js{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}   
+/* Форма */
+.blanck_registration{
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    margin-left: -150px;
+    width: 300px;
+    height: 500px;
+    background-color: rgb(189, 189, 189);
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px;
+}
+/* название бланка */
+.valeu_html{
+    font-size: 30px;
+    position: fixed;
+    top: 60px;
+    left: 50%;
+    margin-left: -50px;
+}
+/* логин */
+.login_text{
+    font-size: 18px;
+    position: fixed;
+    top: 120px;
+    left: 50%;
+    margin-left: -70px;
+}
+.inputLogin{
+    position: fixed;
+    top: 150px;
+    left: 50%;
+    width: 200px;
+    margin-left: -105px;
+    padding: 5px;
+}
+/* пароль */
+.password_text{
+    font-size: 18px;
+    position: fixed;
+    top: 190px;
+    left: 50%;
+    margin-left: -70px;
+}
+.input_password{
+    position: fixed;
+    top: 220px;
+    left: 50%;
+    width: 200px;
+    margin-left: -105px;
+    padding: 5px;
+}
+/* Отправить */
+.input_Btn{
+    font-size: 24px;
+    cursor: pointer;
+    position: fixed;
+    top: 472px;
+    left: 50%;
+    width: 150px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    margin-left: -85px;
+    background-color: #cc99cc; 
+    /* color: rgb(52, 0, 240); */
+    box-shadow: inset 0px -7px 10px -9px #000000 ,
+    0px -1px 6px 1px #000000;
+    /* border-right: 5px solid rgb(52, 0, 240);
+    border-top: 5px solid rgb(52, 0, 240);
+    border-left: 5px solid rgb(52, 0, 240); */
+}
+/* Закрыть */
+.input_close{
+    font-size: 38px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 0 10px 0 10px;
+    padding: 10px;
+    margin-left: 80px;
+    background-color: #cc99cc;
+    /* color: rgb(118, 0, 0);  */
+    box-shadow: inset -7px 7px 10px -9px #000000,
+    0px 1px 6px -1px #000000;
+    /* border-bottom: 5px solid rgb(232, 40, 40);
+    border-left: 5px solid rgb(232, 40, 40); */
+}
+/* _______________________Форма_добавления_анкет___________ */
+.form_add_profile{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -350px;
+    width: 700px;
+    /* height: 700px; */
+    background-color: #fff;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(18, 2vw);
+}
+.h_3{
+    grid-column: 1/11;
+    grid-row: 2/3;
+    text-align: center;
+    font-size: 22px;
+}
+.add_photo{
+    grid-column: 1/11;
+    grid-row: 4/5;
+    text-align: center;
+    font-size: 16px;
+}
+.photo{
+    grid-column: 2/10;
+    grid-row: 5/6;
+    background-color: #cc99cc;
+}
+.about_animal{
+    grid-column: 1/11;
+    grid-row: 7/8;
+    text-align: center;
+    font-size: 16px;
+}
+.about{
+    grid-column: 2/10;
+    grid-row: 8/10;
+    background-color: aqua;
+    font-size: 18px;
+}
+.submit{
+    grid-column: 4/8;
+    grid-row: 17/19;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+
+/* ______Шрифт_________________ */
